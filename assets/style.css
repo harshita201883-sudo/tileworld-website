@@ -300,26 +300,64 @@
       background-image: url('https://images.pexels.com/photos/1457844/pexels-photo-1457844.jpeg?auto=compress&cs=tinysrgb&w=800');
     }
 
-    /* Responsive */
-    @media (max-width: 900px) {
-      .about-content {
-        flex-direction: column;
-        text-align: center;
-      }
+   /* Mobile Responsive */
+@media (max-width: 768px){
 
-      .stats {
-        justify-content: center;
-      }
+.about-content{
+    flex-direction: column;
+    text-align: center;
+}
 
-      .tile-gallery {
-        grid-template-columns: 1fr;
-      }
+.about-left{
+    width:100%;
+}
 
-      .tile1 {
-        height: 200px;
-      }
-    }
+.about-right{
+    width:100%;
+    margin-top:40px;
+}
 
+.about-left h2{
+    font-size:2rem;
+}
+
+.tagline{
+    font-size:1rem;
+}
+
+.desc{
+    font-size:0.95rem;
+    line-height:1.6;
+}
+
+.stats{
+    flex-direction:column;
+    gap:20px;
+    margin-top:20px;
+}
+
+.stat h3{
+    font-size:1.8rem;
+}
+
+.about-btn{
+    margin-top:25px;
+}
+
+/* Tile Gallery */
+.tile-gallery{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+}
+
+.tile{
+    height:180px;
+    width:100%;
+    border-radius:10px;
+}
+
+}
     .showroom-video-section{
     padding:100px 20px;
     text-align:center;

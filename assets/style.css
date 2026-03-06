@@ -301,64 +301,129 @@
     }
 
    /* Mobile Responsive */
-@media (max-width: 768px){
+/* Tablet */
+@media (max-width: 992px){
+
+.about-elite{
+  padding: 100px 30px;
+}
 
 .about-content{
-    flex-direction: column;
-    text-align: center;
-}
-
-.about-left{
-    width:100%;
-}
-
-.about-right{
-    width:100%;
-    margin-top:40px;
+  gap:40px;
 }
 
 .about-left h2{
-    font-size:2rem;
+  font-size:2.5rem;
 }
 
-.tagline{
-    font-size:1rem;
-}
-
-.desc{
-    font-size:0.95rem;
-    line-height:1.6;
-}
-
-.stats{
-    flex-direction:column;
-    gap:20px;
-    margin-top:20px;
-}
-
-.stat h3{
-    font-size:1.8rem;
-}
-
-.about-btn{
-    margin-top:25px;
-}
-
-/* Tile Gallery */
-.tile-gallery{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:15px;
+.about-left .desc{
+  font-size:1rem;
 }
 
 .tile{
-    height:180px;
-    width:100%;
-    border-radius:10px;
+  height:180px;
+}
+
+.tile1{
+  height:220px;
 }
 
 }
-    .showroom-video-section{
+
+
+/* Mobile */
+@media (max-width: 768px){
+
+.about-elite{
+  padding:80px 20px;
+}
+
+.about-content{
+  flex-direction:column;
+  text-align:center;
+}
+
+.about-left{
+  flex:100%;
+}
+
+.about-right{
+  flex:100%;
+}
+
+.about-left h2{
+  font-size:2rem;
+}
+
+.about-left .tagline{
+  font-size:0.95rem;
+}
+
+.about-left .desc{
+  font-size:0.95rem;
+  line-height:1.7;
+}
+
+.stats{
+  justify-content:center;
+  gap:25px;
+}
+
+.stat h3{
+  font-size:2rem;
+}
+
+.stat p{
+  font-size:0.8rem;
+}
+
+.about-btn{
+  padding:12px 35px;
+  font-size:0.9rem;
+}
+
+.tile-gallery{
+  grid-template-columns:1fr;
+}
+
+.tile{
+  height:170px;
+}
+
+.tile1{
+  grid-column:span 1;
+  height:200px;
+}
+
+}
+
+
+/* Small phones */
+@media (max-width: 480px){
+
+.about-left h2{
+  font-size:1.7rem;
+}
+
+.about-left .desc{
+  font-size:0.9rem;
+}
+
+.stat h3{
+  font-size:1.7rem;
+}
+
+.tile{
+  height:150px;
+}
+
+.tile1{
+  height:180px;
+}
+
+}
+
+.showroom-video-section{
     padding:100px 20px;
     text-align:center;
     background: linear-gradient(135deg, #001b4d, #003d99, #002a70);

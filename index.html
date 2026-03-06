@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <link href="image/tile_logo.png" rel="logo">
+  <link href="image/tile_logo.png" rel="tile_logo">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- Main CSS File -->
+  <link href="assets/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .about-wrapper {
+        padding: 80px 10%;
+        background: #f9f9f9;
+    }
+
+    .about-wrapper h2 {
+        text-align: center;
+        font-size: 38px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .about-wrapper h2::after {
+        content: "";
+        width: 80px;
+        height: 4px;
+        background: #111;
+        display: block;
+        margin: 10px auto;
+    }
+
+    /* Card Style */
+    .about-card {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        transition: 0.4s ease;
+    }
+
+    .about-card:hover {
+        transform: translateY(-10px);
+    }
+
+    /* Grid */
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+
+    /* Icons */
+    .icon {
+        font-size: 35px;
+        margin-bottom: 15px;
+        color: #111;
+    }
+
+    /* Achievement Counter Style */
+    .achievement-box {
+        text-align: center;
+    }
+
+    .achievement-box h3 {
+        font-size: 36px;
+        color: #111;
+    }
+
+    /* Team Cards */
+    .team-card img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .team-card {
+        text-align: center;
+    }
+
+    /* Simple Fade Animation */
+    .hidden {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.8s ease;
+    }
+
+    .show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    </style>
+
+</head>
+<body>
+  <div class="main" id="home">
+    <section class="sec-one">
+      <nav class="navbar">
+        <a href="#home" class="logo">
+          <img src="image/tile_logo.png" alt="logo"> TileMax Pvt.Ltd
+        </a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#Collection">Collection</a>
+          <a href="#products">Tiles</a>
+          <a href="#Publication">Catelogues</a>
+          <a href="#map">Map</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Video Background with Centered Text -->
+      <section class="video-section">
+        <video autoplay muted loop class="video-bg">
+          <source src="https://videos.pexels.com/video-files/3444430/3444430-hd_1920_1080_30fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="hero-content">
+          <h1><span>T</span>ILEMAX CERAMICS</h1>
+          <p>Experience the next generation of innovation with our cutting-edge solutions designed for tomorrow.</p>
+          <button class="cta-button">EXPLORE NOW</button>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- ---------- ABOUT SECTION (WHITE BACKGROUND) ---------- -->
+  <section class="about-elite">
+    <div class="about-content">
+      <div class="about-left">
+        <h2><span>TileMax</span>Pvt.Ltd</h2>
+        <p class="tagline">Where Art Meets Architecture</p>
+        <p class="desc">
+          At <strong>Tilemax Ceramics</strong>, we don’t just make tiles — we create surfaces that inspire. 
+          Each collection reflects our passion for design, precision, and durability. 
+          From modern minimalism to classical grandeur, our tiles transform every space into an experience.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <h3>21+</h3>
+            <p>Years of Craftsmanship</p>
+          </div>
+          <div class="stat">
+            <h3>500+</h3>
+            <p>Design Collections</p>
+          </div>
+          
+        </div>
+
+        <button class="about-btn">EXPLORE COLLECTION</button>
+      </div>
+
+      <div class="about-right">
+        <div class="tile-gallery">
+          <div class="tile tile1"></div>
+          <div class="tile tile2"></div>
+          <div class="tile tile3"></div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+<section class="emporium-section">
+    <h1>STILE EMPORIUM</h1>
+    <h5>Select your city below to explore a custom video experience.</h5>
+
+
+    <div class="emporium-video" id="videoBox">
+      <!-- Karachi -->
+      <video class="active" id="karachi" autoplay muted loop playsinline preload="auto">
+        <source src="https://www.stile.com.pk/wp-content/uploads/2025/01/STILE-EMPORIUM-360.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Lahore -->
+      <video id="lahore" muted loop playsinline preload="auto">
+        <source src="https://www.stile.com.pk/wp-content/uploads/2025/01/STILE-EMPORIUM-360.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Islamabad -->
+      <video id="islamabad" muted loop playsinline preload="auto">
+        <source src="https://www.stile.com.pk/wp-content/uploads/2025/01/STILE-EMPORIUM-360.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Multan -->
+      <video id="multan" muted loop playsinline preload="auto">
+        <source src="https://www.stile.com.pk/wp-content/uploads/2025/01/STILE-EMPORIUM-360.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Peshawar -->
+      <video id="peshawar" muted loop playsinline preload="auto">
+        <source src="https://www.stile.com.pk/wp-content/uploads/2025/01/STILE-EMPORIUM-360.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <button class="explore-btn">EXPLORE STILE VIRTUAL TOUR</button>
+  </section>
+
+  <!-- TILE COLLECTION SECTION -->
+<section class="tile-showcase" id="Collection">
+  <div class="section-heading">
+    <h5 class="tagline">Explore. Design. Inspire.</h5>
+    <h2>Our <span>Signature Tile Collections</span></h2>
+    <div class="divider"></div>
+    <p>From luxurious marble finishes to wood textures and outdoor strength — explore collections designed to bring beauty, texture, and durability to every space.</p>
+  </div>
+
+  <div class="tile-grid">
+    <!-- 1 -->
+    <div class="tile-item">
+      <img src="image/2.jpg" alt="Bathroom Tiles">
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Bathroom Tiles</h3>
+          <p>Elegant waterproof designs for modern and traditional bathrooms.</p>
+          <a href="bathroom.html">View Collection</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="tile-item">
+      <img src="image/3.jpg" alt="Kitchen Tiles">
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Kitchen Tiles</h3>
+          <p>Beautiful, easy-to-clean tiles that bring style to every meal space.</p>
+          <a href="kitchen.html">View Collection</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="tile-item">
+      <img src="image/4.jpg" alt="Living Room Tiles">
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Living Room Tiles</h3>
+          <p>Warm tones and luxury finishes that elevate your interiors.</p>
+          <a href="living bedroom.html">View Collection</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="tile-item">
+      <img src="image/5.jpg" alt="Pool Tiles">
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Swimming Pool Tiles</h3>
+          <p>Slip-resistant and UV-protected designs for long-lasting performance.</p>
+          <a href="swimming pool.html">View Collection</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="tile-item">
+      <img src="image/6.jpg" alt="Sanitary Wares">
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Sanitary Wares</h3>
+          <p>Elegant fittings and durable surfaces for a seamless finish.</p>
+          <a href="sanitary wares.html">View Collection</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="tile-item">
+      <img src="image/7.jpg" alt="Outdoor Tiles">
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Outdoor Tiles</h3>
+          <p>High-strength tiles built to last against every element.</p>
+          <a href="outdoor.html">View Collection</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="tile-item">
+      <img src="image/8.jpg" alt="Commercial Use">
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Commercial Tiles</h3>
+          <p>Engineered for durability, perfect for high-traffic spaces.</p>
+          <a href="commercial use.html">View Collection</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="tile-item">
+      <img src="image/1 (2).jpg" alt="Cladding Tiles">
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Cladding Tiles</h3>
+          <p>Texture, depth, and timeless appeal for your walls.</p>
+          <a href="cladding.html">View Collection</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="tile-item">
+      <img src="image/9.jpg" alt="Wood Tiles">
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Wood Tiles</h3>
+          <p>Warm wood textures with the strength of porcelain.</p>
+          <a href="wood.html">View Collection</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="product-section" id="products">
+  <h2>Our Tile Collections</h2>
+  <p>Explore a wide variety of tiles crafted for beauty, durability, and modern living — designed to transform every corner of your home or workspace.</p>
+
+  <div class="product-grid">
+    <a href="bathroom.html" class="product-card">
+        <img src="image/clad.jpg" alt="Bathroom">
+        <h4>CLADDING</h4>
+    </a>
+
+    <a href="bathroomm.html" class="product-card">
+      <img src="image/7.jpg" alt="Bathroom">
+      <h4>BATHROOM</h4>
+    </a>
+
+   <a href="bathroom.html" class="product-card">
+      <img src="image/1 (4).jpg" alt="Bathroom">
+      <h4>KITCHEN</h4>
+    </a>
+
+   <a href="bathroom.html" class="product-card">
+      <img src="image/1 (5).jpg" alt="Bathroom">
+      <h4>BEDROOM</h4>
+    </a>
+    
+    <a href="bathroom.html" class="product-card">
+      <img src="image/6.jpg" alt="Bathroom">
+      <h4>SWIMING POOL</h4>
+    </a>
+    
+    <a href="bathroom.html" class="product-card">
+      <img src="image/1 (2).jpg" alt="Bathroom">
+      <h4>SANITARY WARES</h4>
+    </a>
+
+    <a href="bathroom.html" class="product-card">
+      <img src="image/out.jpg" alt="Bathroom">
+      <h4>OUTDOOR</h4>
+    </a>
+    
+    <a href="bathroom.html" class="product-card">
+      <img src="image/comm.jpg" alt="Bathroom">
+      <h4>COMMERCIAL USE</h4>
+    </a>
+    
+    <a href="bathroom.html" class="product-card">
+      <img src="image/wood.jpg" alt="Bathroom">
+      <h4>WOODEN</h4>
+    </a>
+    <a href="bathroom.html" class="product-card">
+      <img src="image/1 (1).jpg" alt="Bathroom">
+      <h4>FLOOR</h4>
+    </a>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <h3 id="lightbox-title"></h3>
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-desc"></p>
+    <button class="close-btn" onclick="closeLightbox()">Close</button>
+  </div>
+</div>
+
+<section class="publications-section" id="Publication">
+  <h2 class="section-title">Our Catelogues</h2>
+  <p class="section-subtitle">
+    Explore our exclusive publications featuring design inspirations, architectural insights, and creative trends from the world of Elite Tiles.
+  </p>
+
+  <div class="publications-grid">
+    <div class="pub-card">
+      <img src="image/k.jpg" alt="Catalogs" class="pub-img">
+      <div class="pub-content">
+        <h3>Catalogs</h3>
+        <p>Our catalogs present a curated selection of tile collections — from modern designs to timeless classics — helping you choose the perfect fit for your interiors.</p>
+        <a href="#" class="pub-btn">View Catalog</a>
+      </div>
+    </div>
+
+    <div class="pub-card">
+      <img src="image/s.jpg" alt="Stile & Design" class="pub-img">
+      <div class="pub-content">
+        <h3>Stile & Design</h3>
+        <p>This publication dives deep into architecture and design trends, exploring creative ways tiles can transform both residential and commercial spaces.</p>
+        <a href="#" class="pub-btn">Read More</a>
+      </div>
+    </div>
+
+    <div class="pub-card">
+      <img src="image/kk.jpg" alt="Khabarnama" class="pub-img">
+      <div class="pub-content">
+        <h3>Khabarnama</h3>
+        <p>Stay informed with Elite Tiles — from product innovations to design stories, Khabarnama connects you with the art and technology of modern tiling.</p>
+        <a href="#" class="pub-btn">Explore</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tools-section" id="about">
+  <section class="about-unique">
+
+    <!-- STORY SECTION -->
+    <div class="about-story">
+        <div class="story-text hidden">
+            <h1>About US</h1>
+            
+            <h3>Our Story – TileWorld Showroom</h3>
+
+            <p>
+                TileWorld Showroom was founded with a clear and determined vision —
+                to provide premium ceramic tile solutions that combine durability,
+                elegance, and affordability. What began as a focused business initiative
+                gradually evolved into a trusted and respected name in the tile industry.
+            </p>
+
+            <p>
+                In the early stages, our leadership worked closely with local builders,
+                homeowners, and contractors to understand market demands. Instead of
+                simply supplying tiles, we curated collections that reflected modern
+                architecture and long-lasting performance standards.
+            </p>
+
+            <p>
+                Under the strategic direction of our directors, the company expanded
+                steadily, building strong partnerships and maintaining transparent
+                business practices. Every completed project strengthened not only
+                our portfolio but also the trust placed in us by our clients.
+            </p>
+
+            <p>
+                Today, we proudly serve both residential and commercial developments.
+                Our journey continues with innovation, dedication, and a commitment
+                to delivering quality without compromise.
+            </p>
+        </div>
+
+        <div class="story-image hidden">
+            <img src="image/9.jpg" alt="Tile Showroom">
+        </div>
+    </div>
+
+    <!-- TEAM SECTION -->
+    <h2 class="section-heading">Our Leadership</h2>
+    <div class="team-grid">
+
+        <div class="team-card hidden">
+            <img src="image/dir.jpeg" alt="Director">
+            <h4>Chandraprakash Sharma</h4>
+            <p>Director</p>
+        </div>
+
+        <div class="team-card hidden">
+            <img src="image/manager.jpeg" alt="Manager">
+            <h4>Tarachand  Sharma</h4>
+            <p>Manager</p>
+        </div>
+
+        <div class="team-card hidden">
+            <img src="image/sale.jpeg" alt="Sales Executive">
+            <h4>Vinod Rana</h4>
+            <p>Sales Executive</p>
+        </div>
+
+    </div>
+
+    <!-- MISSION & VISION -->
+    <h2 class="section-heading">Mission & Vision</h2>
+
+    <div class="info-grid">
+
+        <div class="info-card hidden">
+            <i class="fas fa-bullseye"></i>
+            <h3>Our Mission</h3>
+            <p>Deliver innovative, durable and stylish tile solutions with integrity.</p>
+        </div>
+
+        <div class="info-card hidden">
+            <i class="fas fa-eye"></i>
+            <h3>Our Vision</h3>
+            <p>To become a leading ceramic brand known for quality and trust.</p>
+        </div>
+
+        <div class="info-card hidden">
+            <i class="fas fa-award"></i>
+            <h3>Quality Assurance</h3>
+            <p>Strict inspection processes to maintain excellence.</p>
+        </div>
+
+    </div>
+
+  </section>
+</section>
+
+<!-- WHY CHOOSE US SECTION START -->
+<section class="why-choose">
+  <div class="container">
+    <h2>Why Choose <span>TileMax Ceramics Tiles</span>?</h2>
+    <div class="underline"></div>
+    <p class="intro">
+      We blend innovation, design, and durability to create tiles that redefine modern architecture.
+      Experience the perfect balance between style and performance.
+    </p>
+
+    <div class="features">
+      <div class="feature-box">
+        <div class="icon-circle"><i class="fas fa-gem"></i></div>
+        <h3>Premium Quality</h3>
+        <p>Crafted from the finest materials to ensure long-lasting beauty and performance in every tile.</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon-circle"><i class="fas fa-palette"></i></div>
+        <h3>Modern Designs</h3>
+        <p>Stay ahead of trends with elegant, cutting-edge designs for both contemporary and classic interiors.</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon-circle"><i class="fas fa-industry"></i></div>
+        <h3>Advanced Manufacturing</h3>
+        <p>Utilizing world-class technology for precision, consistency, and top-notch finish in every product.</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon-circle"><i class="fas fa-handshake"></i></div>
+        <h3>Trusted by Professionals</h3>
+        <p>Architects, builders, and homeowners trust Elite Tiles for their reliability and visual excellence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+/* Scroll Animation */
+const cards = document.querySelectorAll('.tool-card');
+
+function showCardsOnScroll() {
+  const trigger = window.innerHeight * 0.85;
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if (top < trigger) card.classList.add('show');
+  });
+}
+
+window.addEventListener('scroll', showCardsOnScroll);
+window.addEventListener('load', showCardsOnScroll);
+</script>
+
+
+<!-- Contact Us Section -->
+<section class="contact-section" id="contact">
+  <div class="contact-header">
+    <p>Contact Us</p>
+  </div>
+
+  <div class="contact-form-box">
+    <h2>We’d Love to Hear From You</h2>
+    <p>Please fill out the form below, and our team will get back to you shortly.</p>
+
+    <form action="#" method="POST" class="contact-form">
+      <div class="input-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Shop Map Section Start -->
+<section class="shop-map-section" id="map">
+  <div class="map-title">
+    <h2>Visit Our Showroom</h2>
+    <p>Explore our premium range of tiles and experience unmatched design innovation at our showroom location.</p>
+  </div>
+
+  <div class="map-wrapper">
+    <div class="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115906.13297323565!2d66.92157044335936!3d24.793171000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33dcdb0256a71%3A0x38d84f307bad9e93!2sAive%20Karachi!5e0!3m2!1sen!2s!4v1745309441767!5m2!1sen!2s" 
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="map-details">
+      <h3>TileMax Ceramic Pvt.Ltd</h3>
+      <p><strong>📍 Address:</strong> Garden , Satelite, 4,5 , 2nd floor , Camps Corner - 1 , Opp. Sales India, 100 Feet Rd, nr. Prahlad Nagar, Ahmedabad, Gujarat 380015</p>
+      <p><strong>🕒 Hours:</strong> Mon–Sat, 10:00 AM – 8:00 PM</p>
+      <p><strong>☎️ Phone:</strong> +91 8000261555</p>
+      <p><strong>✉️ Email:</strong> Tilemax@.com</p>
+      <p class="desc">Discover stunning tiles, outdoor collections, and design inspiration — all crafted to perfection.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!--  FOOTER START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Left Section -->
+    <div class="footer-left">
+      <div class="footer-brand">
+        <img src="image/tile_logo.png" alt="Elite Tiles Logo" class="footer-logo">
+        <h3>TileMax Ceramics Pvt.Ltd</h3>
+      </div>
+      <p>Discover the art of elegance — explore our premium range of indoor, outdoor, and commercial tiles crafted for
+        perfection, durability, and timeless appeal.</p>
+    </div>
+
+    <!-- Center Section -->
+    <div class="footer-center">
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="eproject2.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="lion.html">Cards</a></li>
+          <li><a href="markhor.html">Products</a></li>
+          <li><a href="indian alligator.html">Tiles Info</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="footer-right">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+
+      <div class="shop-timing">
+        <h4>Shop Timings</h4>
+        <p>Mon – sat: 9:00 AM – 8:00 PM</p>
+        <p>Sun: 10:00 AM – 3:00 PM</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 TileMax Ceramics Pvt.Ltd | Designed with Elegance & Passion</p>
+  </div>
+</footer>
+<!--  FOOTER END -->
+
+<!-- Main JS File -->
+<script src="assets/script.js"></script>
+
+<script>
+const elements = document.querySelectorAll(".hidden");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+}, { threshold: 0.2 });
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

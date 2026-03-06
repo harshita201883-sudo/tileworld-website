@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bathroom Tiles | TileMax</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<section class="category-page">
+  <h1>Bathroom Tiles Collection</h1>
+  <p>Discover our premium waterproof and stylish bathroom tile designs.</p>
+  <div class="tiles-grid">
+
+    <div class="tile-box">
+        <img src="image/1.jpg" class="gallery-img">
+        <h5>Ivory Marble</h5>
+        <p class="size">600 x 600 mm</p>
+    </div>
+
+    <div class="tile-box">
+        <img src="image/2.jpg" class="gallery-img">
+        <h5>Ocean Grey</h5>
+        <p class="size">300 x 600 mm</p>
+    </div>
+
+    <div class="tile-box">
+        <img src="image/3.jpg" class="gallery-img">
+        <h5>Stone Beige</h5>
+        <p class="size">400 x 400 mm</p>
+    </div>
+
+    </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <span class="close" id="closeBtn">&times;</span>
+  
+  <img class="lightbox-img" id="lightboxImg">
+  
+  <div class="lightbox-info">
+    <h4 id="lightboxTitle"></h4>
+    <p id="lightboxSize"></p>
+  </div>
+
+  <div class="nav">
+    <button id="prevBtn">&#10094;</button>
+    <button id="nextBtn">&#10095;</button>
+  </div>
+</div>
+
+<script>
+const galleryImages = document.querySelectorAll(".gallery-img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const lightboxTitle = document.getElementById("lightboxTitle");
+const lightboxSize = document.getElementById("lightboxSize");
+const closeBtn = document.getElementById("closeBtn");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
+
+let currentIndex = 0;
+
+galleryImages.forEach((img, index) => {
+  img.addEventListener("click", () => {
+    currentIndex = index;
+    showImage();
+    lightbox.style.display = "flex";
+  });
+});
+
+function showImage() {
+  const selectedTile = galleryImages[currentIndex].parentElement;
+  
+  lightboxImg.src = galleryImages[currentIndex].src;
+  lightboxTitle.textContent = selectedTile.querySelector("h5").textContent;
+  lightboxSize.textContent = selectedTile.querySelector(".size").textContent;
+}
+
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % galleryImages.length;
+  showImage();
+});
+
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+  showImage();
+});
+
+closeBtn.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+</script>
+</body>
+</html>

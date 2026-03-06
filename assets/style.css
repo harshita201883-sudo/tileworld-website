@@ -138,29 +138,36 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        padding: 1rem 2rem;
-      }
+            /* Responsive Design */
+        @media (max-width:768px){
+        
+          .navbar{
+            flex-direction: column;
+            padding: 1rem;
+          }
+        
+          .nav-links{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+          }
+        
+          .nav-links a{
+            margin:0.5rem;
+          }
+        
+        }
+      @media (max-width:768px){
 
-      .nav-links {
-        margin-top: 10px;
-      }
+  .hero-content h1{
+    font-size:1.8rem;
+  }
 
-      .nav-links a {
-        margin: 0 1rem;
-      }
+  .hero-content p{
+    font-size:0.95rem;
+  }
 
-      .hero-content h1 {
-        font-size: 2.2rem;
-      }
-
-      .hero-content p {
-        font-size: 1rem;
-      }
-    }
+}
 
      /* ---------- ABOUT SECTION (Now White Background) ---------- */
     .about-elite {

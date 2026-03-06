@@ -320,116 +320,48 @@
       }
     }
 
-    .emporium-section {
-      padding: 100px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #001b4d, #003d99, #002a70);
-    }
+    .showroom-video-section{
+    padding:100px 20px;
+    text-align:center;
+    background: linear-gradient(135deg, #001b4d, #003d99, #002a70);
+}
 
-    .emporium-section h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-      color: #ffffff;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-    }
+.showroom-video-section h1{
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing:2px;
+    color:#ffffff;
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
 
-    .emporium-section h1::after {
-      content: "";
-      display: block;
-      width: 60%;
-      height: 3px;
-      background: linear-gradient(90deg, #3b82f6, #60a5fa);
-      margin: 10px auto 0;
-      border-radius: 3px;
-    }
+.showroom-video-section h1::after{
+    content:"";
+    display:block;
+    width:60%;
+    height:3px;
+    background:linear-gradient(90deg,#3b82f6,#60a5fa);
+    margin:10px auto 0;
+    border-radius:3px;
+}
 
-    .emporium-section h5 {
-      max-width: 850px;
-      margin: 20px auto 40px;
-      color: #dbeafe;
-      font-size: 1.05rem;
-      line-height: 1.7;
-    }
+.showroom-video-section h5{
+    max-width:850px;
+    margin:20px auto 40px;
+    color:#dbeafe;
+    font-size:1.05rem;
+    line-height:1.7;
+}
 
-    .city-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 60px;
-      list-style: none;
-    }
+.video-wrapper{
+    max-width:1000px;
+    margin:auto;
+}
 
-    .city-list li {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(59, 130, 246, 0.4);
-      border-radius: 30px;
-      padding: 8px 18px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-
-    .city-list li a {
-      text-decoration: none;
-      color: #ffffff;
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-
-    .city-list li.active {
-      background: #3b82f6;
-      border-color: #3b82f6;
-      box-shadow: 0 0 12px rgba(59, 130, 246, 0.5);
-    }
-
-    .city-list li:hover {
-      background: rgba(59, 130, 246, 0.2);
-      transform: translateY(-2px);
-      box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
-    }
-
-    .emporium-video {
-      width: 80%;
-      max-width: 950px;
-      margin: 0 auto;
-      border-radius: 20px;
-      overflow: hidden;
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
-      position: relative;
-    }
-
-    .emporium-video video {
-      width: 100%;
-      height: auto;
-      display: none;
-      border-radius: 20px;
-    }
-
-    .emporium-video video.active {
-      display: block;
-    }
-
-    .explore-btn {
-      margin-top: 50px;
-      background: linear-gradient(90deg, #3b82f6, #2563eb);
-      color: #fff;
-      border: none;
-      padding: 15px 40px;
-      border-radius: 40px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .explore-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
-    }
-
+.video-wrapper video{
+    width:100%;
+    border-radius:10px;
+}
     @media (max-width: 768px) {
       .emporium-section h1 {
         font-size: 2rem;
@@ -1604,5 +1536,3 @@
 .tile-box:hover {
   transform: translateY(-5px);
 }
-
-

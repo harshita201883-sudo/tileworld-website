@@ -847,6 +847,78 @@
   border: 2px solid #0033cc;
 }
 
+/* 📱 Tablet */
+@media (max-width: 992px) {
+
+  .publications-section {
+    padding: 60px 30px;
+  }
+
+  .section-title {
+    font-size: 2.1rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .publications-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+  }
+
+  .pub-img {
+    height: 210px;
+  }
+
+}
+
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+
+  .publications-section {
+    padding: 50px 20px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 35px;
+  }
+
+  .publications-grid {
+    grid-template-columns: 1fr;   /* single column */
+    gap: 25px;
+  }
+
+  .pub-img {
+    height: 200px;
+  }
+
+  .pub-content {
+    padding: 20px 18px 25px;
+  }
+
+  .pub-content h3 {
+    font-size: 1.15rem;
+  }
+
+  .pub-content p {
+    font-size: 0.95rem;
+  }
+
+  .pub-btn {
+    padding: 9px 20px;
+    font-size: 0.9rem;
+  }
+
+}
+
 /* Gradient Background */
 .tools-section {
   background: linear-gradient(135deg, #001b4d, #003d99, #002a70);
